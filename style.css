@@ -1,0 +1,234 @@
+/* fontes da marca */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variáveis da paleta de cores do site e fontes */
+:root {
+  --corPrincipal: #03453B;
+  --corSecundaria: #D37435;
+  --corTerciaria: #A4774F;
+  --corAlerta: #EF9C05;
+  --corClara: #ECE1D4;
+  --corEscura: #B2BB8C;
+
+  --fontPrincipal: 'Poppins', sans-serif;
+  --fontSecundaria: 'Montserrat', sans-serif
+}
+
+/* fonte principal */
+.fontPrincipal {
+  font-family: var(--fontPrincipal);
+}
+
+.fontSecundaria {
+  font-family: var(--fontSecundaria);
+}
+
+/* cor principal */
+.corPrincipal {
+  color: var(--corPrincipal);
+}
+
+/* cor secundária */
+.corSecundaria {
+  color: var(--corSecundaria);
+}
+
+/* cor terciária */
+.corTerceira {
+  color: var(--corTerciaria);
+}
+
+/* cor clara */
+.corAlerta {
+  color: var(--corClara);
+}
+
+/* cor alerta */
+.corClara {
+  color: var(--corAlerta);
+}
+
+/* cor escura */
+.corEscura {
+  color: var(--corEscura);
+}
+
+.bg-corEscura {
+  background-color: var(--corEscura);
+}
+
+.bg-corSecundaria {
+  background-color: var(--corSecundaria);
+}
+
+.bg-corClara {
+  background-color: var(--corClara);
+}
+
+.bg-corPrincipal {
+  background-color: var(--corPrincipal);
+}
+
+.btn-bg-corEscura {
+  background-color: var(--corEscura);
+}
+
+.btn-bg-corPrincipal {
+  background-color: var(--corPrincipal);
+}
+
+.btn-bg-corTerciaria:hover {
+  background-color: var(--corTerciaria);
+}
+
+/* configurações globais */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* fonte padrão */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* cabeçalho */
+.header {
+  padding: 50px calc(10% + 2vw);
+  width: 100%;
+}
+
+Logo {
+  width: 5%;
+  margin-right: 2vw;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 0 10px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px ;
+  font-family: "Montserrat", sans-serif;
+  font-weight: light;
+}
+
+.p1 {
+  font-size: 32px ;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.p2 {
+  font-size: 28px ;
+  font-family: "Poppins", sans-serif;
+}
+
+.p3 {
+  font-size: 20px ;
+  font-family: "Poppins", sans-serif;
+}
+
+.p4 {
+  font-size: 15px ;
+  font-family: "Montserrat", sans-serif;
+  font-weight: light;
+}
+
+form label {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container {
+  width: 90vw;
+  padding: 1%;
+}
+
+nav img {
+  transition: transform 100ms;
+}
+
+nav img:hover {
+  transform: scale(1.2);
+}
+
+/* Efeito de transição para a cor de fundo e a cor do texto */
+.nav-link {
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+/* Efeito de transição específico para o link ativo */
+.nav-link.active {
+  background-color: #ECE1D4;
+}
+.nav-link:hover {
+  background-color: #ECE1D4; /* Cor de fundo ao passar o mouse */
+
+}
+
+.img-fluid-qmsomos {
+  width: 30%;
+  
+}
+
+.contact-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.custom-card {
+  background-color: #B2BB8C; /* Defina a cor de fundo desejada */
+}
+
+.h5-creditos{
+  color: #fff ;
+}
+
+.border {
+  border-radius: 5px;
+}
+
+.depoimento {
+    background-color: var(--corClara);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 400px; /* Defina o tamanho fixo desejado */
+    height: 200px; /* Defina o tamanho fixo desejado */
+    overflow: hidden; /* Para esconder qualquer conteúdo que possa transbordar */
+}
+
+.depoimento h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.depoimento p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow: hidden; /* Para esconder qualquer conteúdo que possa transbordar */
+}
+
+.footer {
+
+  padding: 30 calc(10% + 2vw);
+  text-align: center;
+  background-color: #B2BB8C;
+
+}
+
+.footer-img {
+    width: 23%;
+}
+
+.img-slide {
+  width: 85%;
+}

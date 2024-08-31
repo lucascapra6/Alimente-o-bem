@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+
+    <link     
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-corEscura bg-corEscura">
+        <div class="container-fluid">
+          <a href="/index.html" class="navbar-brand d-flex align-items-center">
+            <img
+              src="./assets/logo-projeto/PNG VERDE.png"
+              alt="Logo"
+              width="100"
+              height="100"
+              class="img-fluid"/></a>
+
+          <!-- resolução abaixo de sm -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- menu -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="menuNavbar">
+            <div class="navbar-nav rounded-3">
+              <a href="index.html" class="nav-link me-2">Página Inicial</a>
+              <a href="1-facaSuaDoacao.html" class="nav-link me-2 ">Faça sua Doação</a>
+              <a href="2-comoFunciona.html" class="nav-link me-2 active">Como funciona</a>
+              <a href="3-quemSomos.html" class="nav-link me-2 ">Quem Somos</a>
+              <a href="4-creditos.html" class="nav-link me-2 ">Créditos</a>
+              <a href="5-contato.html" class="nav-link me-2 ">Contato</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid bg-corClara ">
+      <br>
+    <!-- doação -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Doações de Alimentos</h2>
+          <p>Os alimentos doados devem vir principalmente de restaurantes e supermercados, onde há comidas excedentes ou próximas de vencer. Esses alimentos, apesar de ainda estarem próprios para consumo, muitas vezes são descartados devido a questões de prazo de validade ou excesso de estoque.</p>
+          <p>Ao fazer essas doações, não apenas evitamos o desperdício de alimentos, mas também ajudamos a alimentar aqueles que mais precisam. Pequenas ações como essa podem fazer uma grande diferença na vida de pessoas em situação de vulnerabilidade.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/Prancheta 2.png" alt="Alimentos Excedentes" class="img-fluid">
+        </div>
+      </div>
+    </div>
+<hr>
+    <!-- area dos receptores -->
+    <div class="container ">
+    <p class="display-2 p1">Área dos receptores</p>
+    <p>Essa seção serve como uma ponte entre os doadores e as organizações que realmente fazem a diferença na vida das pessoas. É um espaço onde a generosidade encontra seu propósito, conectando aqueles que desejam ajudar com aqueles que mais precisam.</p>
+    <br>
+      
+      <!-- instituiçao 1 -->
+      <p class="display-2 p2">Casa da Sopa Amor Fraterno</p>   
+      <button class="btn btn-bg-corEscura mb-2"
+      data-bs-toggle="collapse"
+      data-bs-target="#painel">Mostrar mais</button>
+        <div class="collapse" id="painel">
+          <div class="card card-body bg-corEscura">
+            <div class="col-md-12">
+            <img src="assets/imginst/img1.png" alt="" class="d-block w-50">
+              <hr>
+            </div>
+            <div class="col-md-12">
+            <p>
+            <b>Descrição:</b> A Casa da Sopa Amor Fraterno é uma organização sem fins lucrativos que atua há mais de 20 anos na distribuição de refeições diárias para pessoas em situação de vulnerabilidade social. Além de oferecer alimentação, a instituição também promove programas de capacitação e inclusão social. <br> <hr>
+            <b>Email: </b> contato@casadasopa.org.br <br>
+            <b>Telefone: </b>(XX) XXXX-XXXX <br>
+            <b>Endereço: </b> Rua da Solidariedade, 123 - Bairro da Esperança, Cidade Feliz - Estado
+            </p>
+            </div>
+          </div>
+          </div>
+      </div>
+    
+      <!-- instituição 2 -->
+      <div class="container">
+      <p class="display-2 p2">Associação Beneficente Mãos Solidárias</p>   
+      <button class="btn btn-bg-corEscura mb-2"
+      data-bs-toggle="collapse"
+      data-bs-target="#painel2">Mostrar mais</button> <br>
+        <div class="collapse" id="painel2">
+          <div class="card card-body bg-corEscura">
+            <div class="col-md-12">
+            <img src="assets/imginst/img2.jpg" alt="" class="d-block w-50">
+            </div> <hr>
+            <div class="col-md-12">
+            <p>
+            <b>Descrição:</b> A Associação Beneficente Mãos Solidárias é dedicada a fornecer assistência integral para famílias carentes, incluindo alimentação, educação, assistência médica e apoio psicossocial. A organização realiza campanhas regulares de arrecadação de alimentos para garantir que as necessidades básicas das comunidades sejam atendidas. <br>
+              <hr>
+            <b>Email: </b> contato@maossolidarias.org <br>
+            <b>Telefone: </b>(XX) XXXX-XXXX <br>
+            <b>Endereço: </b> Av. da Esperança, 456 - Bairro União, Cidade Solidária - Estado
+            </p>
+            </div>
+          </div>
+          </div>
+      </div>
+
+    <!-- instituição 3 -->
+    <div class="container">
+    <p class="display-2 p2">Instituto Cidadania e Solidariedade</p>   
+    <button class="btn btn-bg-corEscura mb-2"
+    data-bs-toggle="collapse"
+    data-bs-target="#painel3">Mostrar mais</button>
+      <div class="collapse" id="painel3">
+        <div class="card card-body bg-corEscura">
+          <div class="col-md-12">
+          <img src="assets/imginst/img3.png" alt="" class="d-block w-50">
+            <hr>
+          </div>
+          <div class="col-md-12">
+          <p>
+          <b>Descrição:</b> O Instituto Cidadania e Solidariedade é uma instituição comprometida em promover o desenvolvimento humano e social por meio de programas de alimentação, educação e geração de renda. A organização mantém uma rede de distribuição de alimentos que beneficia milhares de pessoas em áreas urbanas e rurais. <br> <hr>
+          <b>Email: </b> contato@institutocidadania.org <br>
+          <b>Telefone: </b>(XX) XXXX-XXXX <br>
+          <b>Endereço: </b> Travessa da Solidariedade, 789 - Bairro Esperança Nova, Cidade Unida - Estado
+          </p>
+          </div>
+        </div>
+        </div>
+    </div>
+<hr>
+    <br>
+
+
+      <!-- Formulário de Cadastro -->
+      <div class="container ">
+      <div class="row bg-corEscura rounded-3 mt-3 ">
+        <div class="col-md-6 col-md-12">
+          <h3 class="text-center">Cadastro de Receptores</h3>
+          <form class="" id="formCadReceptor">
+          
+            <div class="mb-3">
+              <label for="nomeCadReceptor" class="form-label">Nome do Receptor</label>
+              <input type="text" class="form-control" id="nomeCadReceptor" name="nome" placeholder="Digite seu nome" required">
+            </div>
+            <div class="mb-3">
+              <label for="idCadReceptor" class="form-label">Identificação (CPF/CNPJ)</label>
+              <input type="text" class="form-control" id="idCadReceptor" name="identifica" placeholder="Digite seu CPF ou CNPJ, caso for empresa" required>
+            </div>
+            <div class="mb-3">
+              <label for="descricaoCadReceptor" class="form-label">Descrição</label>
+              <textarea class="form-control" id="descricaoCadReceptor" name="descricao" placeholder="Escreva um pequeno texto de apresentação, caso pessoa. Caso seja empresa, escreva sobre." required"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="emailCadReceptor" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="emailCadReceptor" name="email" placeholder="Escreva o email para contato" required">
+            </div>
+            <div class="mb-3">
+              <label for="telefoneCadReceptor" class="form-label">Telefone</label>
+              <input type="tel" class="form-control" id="telefoneCadReceptor" name="telefone" placeholder="Escreva o telefone para contato" required">
+            </div>
+            <div class="mb-3">
+              <label for="enderecoCadReceptor" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="enderecoCadReceptor" name="endereco" placeholder="Ex: av. da Esperança, 456 - Bairro União, Cidade Solidária - Estado - CEP" required>
+            </div>
+            <div class="mb-3">
+              <label for="imagem" class="form-label">Imagem</label>
+              <input type="file" class="form-control" id="imagem" name="imagem" required>
+            </div>
+            <button type="submit" class="btn btn-bg-corPrincipal btn-bg-corTerciaria text-light mb-3">Cadastrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+      
+    
+    <!-- rodape -->
+    <footer class="footer text-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- links e contato -->
+          <div class="col-md-4">
+            <h5>Informações de Contato</h5>
+            <ul class="list-unstyled">
+              <li>Endereço: 123 Rua Principal, Cidade, Estado</li>
+              <li>Telefone: (123) 456-7890</li>
+              <li>Email: exemplo@example.com</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Links Úteis</h5>
+            <ul class="list-unstyled">
+              <li><a href="/1-facaSuaDoacao.html" class="text-light">Faça sua Doação</a></li>
+              <li><a href="/2-comoFunciona.html" class="text-light">Como funciona</a></li>
+              <li><a href="/3-quemSomos.html" class="text-light">Quem Somos</a></li>
+              <li><a href="/4-creditos.html" class="text-light">Créditos</a></li>
+              <li><a href="/5-contato.html" class="text-light">Contato</a></li>
+            </ul>
+          </div>
+
+      <!-- logos -->                      
+            <div class="col-md-4">
+              <h5>Patrocinadores</h5>
+              <a href="https://www.ifes.edu.br/">
+              <img src="assets/logo-ifes/ifes-vertical-cor.png" alt="Logo 1" class="footer-img"></a>
+
+              <a href="https://action.org.es/">
+              <img src="assets/logo-action/vertical-cor.png" alt="Logo 2" class="footer-img"></a>
+
+              <a href="https://reprograme-se.org.br/">
+              <img src="assets/logo-reprogramese/preferencial-vertical.png" alt="footer-img" class="footer-img"></a>
+
+              <a href="https://2679f8a3-46a0-495a-a8f8-52482b1f0094-00-1tp2ikl9vottv.janeway.replit.dev/index.html">
+              <img src="assets/logo-projeto/PNG BEGE.png" alt="Logo 3" class="footer-img"></a>
+
+            </div>
+           </div>
+                <div class="row ">   
+                <div class="col text-center">
+                  <p class="p5">&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+                </div>
+
+            </div>      
+
+      </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+      
+   
+    <script src="cadReceptor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

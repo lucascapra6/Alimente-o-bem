@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro para Doação</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body class="bg-corClara">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-corEscura bg-corEscura fontPrincipal">
+        <div class="container-fluid">
+          <a href="/index.html" class="navbar-brand d-flex align-items-center">
+            <img
+              src="./assets/logo-projeto/PNG VERDE.png"
+              alt="Logo"
+              width="100"
+              height="100"
+              class="img-fluid"
+          /></a>
+
+          <!-- resolução abaixo de sm -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- menu -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="menuNavbar">
+            <div class="navbar-nav rounded-3">
+              <a href="index.html" class="nav-link me-2">Página Inicial</a>
+              <a href="1-facaSuaDoacao.html" class="nav-link me-2 active">Faça sua Doação</a>
+              <a href="2-comoFunciona.html" class="nav-link me-2 ">Como funciona</a>
+              <a href="3-quemSomos.html" class="nav-link me-2 ">Quem Somos</a>
+              <a href="4-creditos.html" class="nav-link me-2 ">Créditos</a>
+              <a href="5-contato.html" class="nav-link me-2 ">Contato</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <div class="container-fluid bg-corClara">
+    <!-- FORMULÁRIO DE CADASTRO DE ALIMENTOS -->
+    
+    <div class="container rounded-3 mt-4 mb-4 bg-corEscura">
+        <h2 class="mb-4 fontPrincipal text-center">Cadastro de alimentos</h2>
+        <hr>
+        <form id="formCadAlimentos">
+          <!-- Nome -->
+          <div class="mb-3 fontSecundaria">
+            <label for="nomeCadAlimentos" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nomeCadAlimentos" placeholder="Digite seu nome" />
+<br>
+            <div class="mb-3">
+              <label for="idCadAlimentos" class="form-label">Identificação (CPF/CNPJ)</label>
+              <input type="text" class="form-control" id="idCadAlimentos" name="identifica" placeholder="Digite seu CPF ou CNPJ, caso for empresa" required>
+            </div>
+
+            <hr>
+
+          <!-- ID do alimento -->
+
+          <div class="mb-3 fontSecundaria">
+            <label for="alimentoCad" class="form-label">Alimento</label>
+            <input type="text" class="form-control mt-2" id="alimentoCad" placeholder="Digite um alimento ou um conjunto de alimentos" />
+          </div>
+
+          <hr>
+
+          <!-- Contato -->
+          <div class="mb-3 fontSecundaria">
+            <label for="telefoneCadAlimento" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="telefoneCadAlimento" placeholder="Telefone" />
+          </div>
+          <div class="mb-3 fontSecundaria">
+            <label for="emailCadAlimento" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailCadAlimento" placeholder="Email" />
+          </div>
+
+          <button type="submit" class="btn btn-bg-Secundario text-white btn-bg-corTerciaria btn-bg-corPrincipal fontPrincipal mb-1">Enviar</button>
+        </form>
+
+      </div>
+    </div>
+
+    <hr>
+    
+    <div class="container rounded-3 mt-4 mb-4 bg-corEscura">
+      <h2 class="mb-4 fontPrincipal text-center">Cadastro para Doação</h2>
+      <hr>
+      <form id="formFacaSuaDoacao">
+        <!-- Nome -->
+        <div class="mb-3 fontSecundaria">
+          <label for="cadNomeFacaSuaDoacao" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="cadNomeFacaSuaDoacao" placeholder="Digite seu nome" />
+
+          <br>
+          
+          <div class="mb-3">
+            <label for="idCadFacasuaDoacao" class="form-label">Identificação (CPF/CNPJ)</label>
+            <input type="text" class="form-control" id="idCadFacasuaDoacao" name="identifica" placeholder="Digite seu CPF ou CNPJ, caso for empresa" required>
+          </div>
+         
+          <!-- Checkbox Anônimo, empresa ou PF -->
+    
+          <br>
+          <div class="mb-3 fontSecundaria">
+              <label class="form-label">Selecione a origem da doação:</label>
+              <div class="form-check mt-2">
+                  <input class="form-check-input" type="radio" id="anonimo" name="tipo" />
+                  <label class="form-check-label" for="anonimo">Desejo ser anônimo</label>
+              </div>
+              <div class="form-check mt-2">
+                  <input class="form-check-input" type="radio" id="empresa" name="tipo" />
+                  <label class="form-check-label" for="empresa">Empresa</label>
+              </div>
+              <div class="form-check mt-2">
+                  <input class="form-check-input" type="radio" id="pessoaf" name="tipo" />
+                  <label class="form-check-label" for="pessoaf">Pessoa física</label>
+              </div>
+          </div>
+
+       
+        
+        <!-- Linha horizontal -->
+        <hr>
+
+        <!-- O que doar -->
+        <div class="mb-3 fontSecundaria">
+          <label for="oqueDoar" class="form-label" aria-describedby="infListDAAlimento">O que doar</label>
+          <select class="form-select" id="oqueDoar">
+            
+            
+          </select>
+          <small id="infListDAAlimento" class="form-text text-muted">Cadastre o alimento no formulário "Cadastro de alimentos" que deseja doar, assim, ele aparecerá na lista de alimentos disponíveis para doação.</small>
+        </div>
+        <!-- Linha horizontal -->
+        <hr>
+
+        <!-- Para quem doar -->
+        <div class="mb-3 fontSecundaria">
+          <label for="paraQuemDoar" class="form-label">Para quem doar</label>
+          <select class="form-select" id="paraQuemDoar">
+            
+            
+          </select>
+        </div>
+          
+        <!-- Linha horizontal -->
+        <hr>
+
+        <!-- Mensagem para a família -->
+        <div class="mb-3 fontSecundaria">
+          <label for="mensagemCadFacaSuaDoacao" class="form-label">Mensagem para o receptor</label>
+          <textarea class="form-control" id="mensagemCadFacaSuaDoacao" rows="3"></textarea>
+          
+        </div>
+        <!-- Linha horizontal -->
+        <hr>
+
+        <!-- Contato -->
+        <div class="mb-3 fontSecundaria">
+          <label for="telefoneCadFacaSuaDoacao" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefoneCadFacaSuaDoacao" placeholder="Telefone" />
+        </div>
+        <div class="mb-3 fontSecundaria">
+          <label for="emailCadFacaSuaDoacao" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailCadFacaSuaDoacao" placeholder="Email" />
+        </div>
+
+        <button type="submit" class="btn btn-bg-Secundario text-white btn-bg-corTerciaria btn-bg-corPrincipal fontPrincipal mb-1">Enviar</button>
+      </form>
+
+    </div>
+  </div>
+  
+
+
+    <!-- rodape -->
+    <footer class="footer text-light">
+      <div class="container">
+        <div class="row">
+
+          <!-- links e contato -->
+          <div class="col-md-4">
+            <h5>Informações de Contato</h5>
+            <ul class="list-unstyled">
+              <li>Endereço: 123 Rua Principal, Cidade, Estado</li>
+              <li>Telefone: (123) 456-7890</li>
+              <li>Email: exemplo@example.com</li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Links Úteis</h5>
+            <ul class="list-unstyled">
+              <li><a href="/1-facaSuaDoacao.html" class="text-light">Faça sua Doação</a></li>
+              <li><a href="/2-comoFunciona.html" class="text-light">Como funciona</a></li>
+              <li><a href="/3-quemSomos.html" class="text-light">Quem Somos</a></li>
+              <li><a href="/4-creditos.html" class="text-light">Créditos</a></li>
+              <li><a href="/5-contato.html" class="text-light">Contato</a></li>
+            </ul>
+          </div>
+
+      <!-- logos -->                      
+            <div class="col-md-4">
+              <h5>Patrocinadores</h5>
+              <a href="https://www.ifes.edu.br/">
+              <img src="assets/logo-ifes/ifes-vertical-cor.png" alt="Logo 1" class="footer-img"></a>
+
+              <a href="https://action.org.es/">
+              <img src="assets/logo-action/vertical-cor.png" alt="Logo 2" class="footer-img"></a>
+
+              <a href="https://reprograme-se.org.br/">
+              <img src="assets/logo-reprogramese/preferencial-vertical.png" alt="footer-img" class="footer-img"></a>
+
+              <a href="https://2679f8a3-46a0-495a-a8f8-52482b1f0094-00-1tp2ikl9vottv.janeway.replit.dev/index.html">
+              <img src="assets/logo-projeto/PNG BEGE.png" alt="Logo 3" class="footer-img"></a>
+
+            </div>
+           </div>
+                <div class="row ">   
+                <div class="col text-center">
+                  <p class="p5">&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+                </div>
+
+            </div>      
+
+      </div>
+
+    </footer>
+
+    <script src="cadDoacao.js"></script>
+    <script src="cadReceptor.js"></script>
+    <script src="cadAlimentos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
