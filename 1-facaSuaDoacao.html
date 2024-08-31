@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro para Doação</title>
-    
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    
+
   </head>
   <body class="bg-corClara">
     <header>
@@ -54,7 +54,7 @@
 
     <div class="container-fluid bg-corClara">
     <!-- FORMULÁRIO DE CADASTRO DE ALIMENTOS -->
-    
+
     <div class="container rounded-3 mt-4 mb-4 bg-corEscura">
         <h2 class="mb-4 fontPrincipal text-center">Cadastro de alimentos</h2>
         <hr>
@@ -97,7 +97,7 @@
     </div>
 
     <hr>
-    
+
     <div class="container rounded-3 mt-4 mb-4 bg-corEscura">
       <h2 class="mb-4 fontPrincipal text-center">Cadastro para Doação</h2>
       <hr>
@@ -108,14 +108,14 @@
           <input type="text" class="form-control" id="cadNomeFacaSuaDoacao" placeholder="Digite seu nome" />
 
           <br>
-          
+
           <div class="mb-3">
             <label for="idCadFacasuaDoacao" class="form-label">Identificação (CPF/CNPJ)</label>
             <input type="text" class="form-control" id="idCadFacasuaDoacao" name="identifica" placeholder="Digite seu CPF ou CNPJ, caso for empresa" required>
           </div>
-         
+
           <!-- Checkbox Anônimo, empresa ou PF -->
-    
+
           <br>
           <div class="mb-3 fontSecundaria">
               <label class="form-label">Selecione a origem da doação:</label>
@@ -133,8 +133,8 @@
               </div>
           </div>
 
-       
-        
+
+
         <!-- Linha horizontal -->
         <hr>
 
@@ -142,8 +142,8 @@
         <div class="mb-3 fontSecundaria">
           <label for="oqueDoar" class="form-label" aria-describedby="infListDAAlimento">O que doar</label>
           <select class="form-select" id="oqueDoar">
-            
-            
+
+
           </select>
           <small id="infListDAAlimento" class="form-text text-muted">Cadastre o alimento no formulário "Cadastro de alimentos" que deseja doar, assim, ele aparecerá na lista de alimentos disponíveis para doação.</small>
         </div>
@@ -154,11 +154,11 @@
         <div class="mb-3 fontSecundaria">
           <label for="paraQuemDoar" class="form-label">Para quem doar</label>
           <select class="form-select" id="paraQuemDoar">
-            
-            
+
+
           </select>
         </div>
-          
+
         <!-- Linha horizontal -->
         <hr>
 
@@ -166,7 +166,7 @@
         <div class="mb-3 fontSecundaria">
           <label for="mensagemCadFacaSuaDoacao" class="form-label">Mensagem para o receptor</label>
           <textarea class="form-control" id="mensagemCadFacaSuaDoacao" rows="3"></textarea>
-          
+
         </div>
         <!-- Linha horizontal -->
         <hr>
@@ -186,62 +186,10 @@
 
     </div>
   </div>
-  
+
 
 
     <!-- rodape -->
-    <footer class="footer text-light">
-      <div class="container">
-        <div class="row">
-
-          <!-- links e contato -->
-          <div class="col-md-4">
-            <h5>Informações de Contato</h5>
-            <ul class="list-unstyled">
-              <li>Endereço: 123 Rua Principal, Cidade, Estado</li>
-              <li>Telefone: (123) 456-7890</li>
-              <li>Email: exemplo@example.com</li>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <h5>Links Úteis</h5>
-            <ul class="list-unstyled">
-              <li><a href="/1-facaSuaDoacao.html" class="text-light">Faça sua Doação</a></li>
-              <li><a href="/2-comoFunciona.html" class="text-light">Como funciona</a></li>
-              <li><a href="/3-quemSomos.html" class="text-light">Quem Somos</a></li>
-              <li><a href="/4-creditos.html" class="text-light">Créditos</a></li>
-              <li><a href="/5-contato.html" class="text-light">Contato</a></li>
-            </ul>
-          </div>
-
-      <!-- logos -->                      
-            <div class="col-md-4">
-              <h5>Patrocinadores</h5>
-              <a href="https://www.ifes.edu.br/">
-              <img src="assets/logo-ifes/ifes-vertical-cor.png" alt="Logo 1" class="footer-img"></a>
-
-              <a href="https://action.org.es/">
-              <img src="assets/logo-action/vertical-cor.png" alt="Logo 2" class="footer-img"></a>
-
-              <a href="https://reprograme-se.org.br/">
-              <img src="assets/logo-reprogramese/preferencial-vertical.png" alt="footer-img" class="footer-img"></a>
-
-              <a href="https://2679f8a3-46a0-495a-a8f8-52482b1f0094-00-1tp2ikl9vottv.janeway.replit.dev/index.html">
-              <img src="assets/logo-projeto/PNG BEGE.png" alt="Logo 3" class="footer-img"></a>
-
-            </div>
-           </div>
-                <div class="row ">   
-                <div class="col text-center">
-                  <p class="p5">&copy; 2024 Seu Site. Todos os direitos reservados.</p>
-                </div>
-
-            </div>      
-
-      </div>
-
-    </footer>
 
     <script src="cadDoacao.js"></script>
     <script src="cadReceptor.js"></script>
