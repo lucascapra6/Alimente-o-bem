@@ -3,12 +3,12 @@
 
 /* variáveis da paleta de cores do site e fontes */
 :root {
-  --corPrincipal: ##3C47EB;
+  --corPrincipal: #730E16;
   --corSecundaria: #595D96;
-  --corTerciaria: ##383941;
-  --corAlerta: #5259C0;
-  --corClara: #ECE1D4;
-  --corEscura: #B2BB8C;
+  --corTerciaria: #A68C41;
+  --corAlerta: #BF4D34;
+  --corClara: #d6d8da;
+  --corEscura: #4a4b61;
 
   --fontPrincipal: 'Poppins', sans-serif;
   --fontSecundaria: 'Montserrat', sans-serif
