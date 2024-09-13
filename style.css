@@ -3,10 +3,10 @@
 
 /* variáveis da paleta de cores do site e fontes */
 :root {
-  --corPrincipal: #03453B;
-  --corSecundaria: #D37435;
-  --corTerciaria: #A4774F;
-  --corAlerta: #EF9C05;
+  --corPrincipal: ##3C47EB;
+  --corSecundaria: #595D96;
+  --corTerciaria: ##383941;
+  --corAlerta: #5259C0;
   --corClara: #ECE1D4;
   --corEscura: #B2BB8C;
 
