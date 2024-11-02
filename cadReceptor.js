@@ -1,8 +1,8 @@
 // Captura o formulário
-const form = document.getElementById('formCadReceptor');
+const formReceptor = document.getElementById('formCadReceptor');
 
 // Adiciona um evento de envio ao formulário
-form.addEventListener('submit', function(event) {
+formReceptor.addEventListener('submit', function(event) {
   // Evita o comportamento padrão de envio do formulário
   event.preventDefault();
 
@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Cria uma opção padrão
     const optionPadraoReceptor = document.createElement('option');
-    optionPadraoReceptor.value = ''; 
-    optionPadraoReceptor.textContent = 'Selecione um receptor'; 
+    optionPadraoReceptor.value = '';
+    optionPadraoReceptor.textContent = 'Selecione um receptor';
     selectOpcaoReceptor.appendChild(optionPadraoReceptor);
 
     // Itera sobre os dados dos receptores

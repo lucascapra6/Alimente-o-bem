@@ -1,8 +1,8 @@
 // Captura o formulário
-const form = document.getElementById('formCadAlimentos');
+const formAlimentos = document.getElementById('formCadAlimentos');
 
 // Adiciona um evento de envio ao formulário
-form.addEventListener('submit', function(event) {
+formAlimentos.addEventListener('submit', function(event) {
   // Evita o comportamento padrão de envio do formulário
   event.preventDefault();
 
@@ -46,4 +46,5 @@ form.addEventListener('submit', function(event) {
 
   // Exibe mensagem de sucesso
   alert('Os dados de cadastro do(s) alimento(s) foram salvos com sucesso!');
+  location.reload()
 });

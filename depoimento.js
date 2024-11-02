@@ -1,8 +1,8 @@
 // Captura o formulário
-const form = document.getElementById('formularioDepoimento');
+const formDepoimento = document.getElementById('formularioDepoimento');
 
 // Adiciona um evento de envio ao formulário
-form.addEventListener('submit', function(event) {
+formDepoimento.addEventListener('submit', function(event) {
   // Evita o comportamento padrão de envio do formulário
   event.preventDefault();
 
