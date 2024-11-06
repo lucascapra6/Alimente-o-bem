@@ -1,197 +1,129 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Plataforma Alimente o Bem</title>
-    <!-- Adicionando Bootstrap CSS -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plataforma Alimente o Bem</title>
+  <!-- Adicionando Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="validaçao.js"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="validaçao.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
 
-  <body>
+<body>
 
-  <!-- CABEÇALHO -->
-    <header>
-      <nav class="navbar navbar-expand-sm  bg-corEscura">
-        <div class="container-fluid">
-        <a href="/Alimente-o-bem/index.html" class="navbar-brand d-flex align-items-center">
+<!-- CABEÇALHO -->
+<header>
+  <nav class="navbar navbar-expand-sm bg-corEscura">
+    <div class="container-fluid">
+      <a href="/Alimente-o-bem/index.html" class="navbar-brand d-flex align-items-center">
         <img src=".\assets\logo-projeto\PNG BEGE.png" alt="Logo" width="100" height="100" class="img-fluid" />
-        </a>
+      </a>
 
-  <!-- resolução abaixo de sm -->
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#menuNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <!-- menu -->
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="menuNavbar">
-            <div class="navbar-nav rounded-3">
-              <a href="index.html" class="nav-link me-2 active">Página Inicial</a>
-              <a href="1-facaSuaDoacao.html" class="nav-link me-2">Faça sua Doação</a>
-              <a href="2-comoFunciona.html" class="nav-link me-2 ">Como funciona</a>
-              <a href="3-quemSomos.html" class="nav-link me-2 ">Quem Somos</a>
-              <a href="5-contato.html" class="nav-link me-2 ">Contato</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
+      <!-- resolução abaixo de sm -->
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menuNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- CONTEUDO -->
-    <div class="container-fluid bg-corClara">
-      <br>
-
-      <!-- slide -->
-      <div class="container">
-        <div class="carousel slide" data-bs-ride="carousel" id="ads">
-          <div class="carousel-indicators">
-            <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
-            <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
-            <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
-            <button class="" data-bs-target="#ads" data-bs-slide-to="3"></button>
-          </div>
-          <div class="carousel-inner">
-
-            <div class="carousel-item active">
-              <a href="1-facaSuaDoacao.html">
-              <img src="assets/imgslide/1.png" alt="" class="d-block w-100"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Faça sua doação!</h5>
-                <p>Cada contribuição é um gesto de amor que reverbera além do momento presente, deixando um legado de bondade para as gerações futuras. Juntos, podemos fazer uma diferença significativa, um coração de cada vez, um ato de doação de cada vez.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <a href="2-comoFunciona.html">
-              <img src="assets/imgslide/2.png" alt="" class="d-block w-100"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Como funciona</h5>
-                <p>Em nossa plataforma, doadores têm a oportunidade única de fazer a diferença de maneira direta e significativa. Com apenas alguns cliques, você pode oferecer alimentos a instituições de caridade locais, restaurantes com excedentes e supermercados com produtos próximos do vencimento. Nossa tecnologia facilita todo o processo, garantindo que suas doações cheguem às mãos certas de forma eficiente e segura.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <a href="3-quemSomos.html">
-              <img src="assets/imgslide/3.png" alt="" class="d-block w-100"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Quem somos</h5>
-                <p>A finalidade da nossa plataforma vai muito além de simplesmente facilitar doações de alimentos. Nós acreditamos no poder transformador da solidariedade e na importância de unir esforços para combater a fome e o desperdício.</p>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <a href="">
-              <img src="assets/imgslide/4.png" alt="" class="d-block w-100"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Contato</h5>
-                <p>Estamos aqui para ouvir você e ajudar a tornar cada doação significativa. Entre em contato conosco através do nosso formulário online, por e-mail ou telefone, e junte-se a nós nessa jornada de solidariedade e generosidade. Juntos, podemos fazer a diferença na vida de tantas pessoas necessitadas.</p>
-              </div>
-            </div>
-
-          </div>
-          <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
+      <!-- menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="menuNavbar">
+        <div class="navbar-nav rounded-3">
+          <a href="index.html" class="nav-link me-2 active">Página Inicial</a>
+          <a href="1-facaSuaDoacao.html" class="nav-link me-2">Cadastrar doação</a>
+          <a href="2-comoFunciona.html" class="nav-link me-2">Como funciona</a>
+          <a href="3-quemSomos.html" class="nav-link me-2">Quem Somos</a>
+          <a href="5-contato.html" class="nav-link me-2">Contato</a>
         </div>
       </div>
+    </div>
+  </nav>
+</header>
 
-    <!-- conteudo textual -->
-      <hr>
-      <div class="container my-3">
-      <p class="display-2 p1">Alimente o Bem</p>
-      <p class="lead">
-        Na jornada da vida, nossos passos são guiados pela compaixão, e nossas mãos são estendidas pela generosidade. Em um mundo onde a fome ainda assola tantas vidas, cada ato de doação é um raio de esperança que ilumina os corações famintos.
+<!-- CONTEUDO -->
+<div class="container-fluid bg-corClara">
+  <br>
 
-        Nós acreditamos no poder transformador da solidariedade. Cada doação de alimentos não é apenas um gesto, mas sim um ato de amor que nutre não só o corpo, mas também a alma daqueles que mais precisam.
+  <!-- slide -->
+  <div class="container">
+    <div class="carousel slide" data-bs-ride="carousel" id="ads">
+      <div class="carousel-indicators">
+        <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+        <button data-bs-target="#ads" data-bs-slide-to="1"></button>
+        <button data-bs-target="#ads" data-bs-slide-to="2"></button>
+        <button data-bs-target="#ads" data-bs-slide-to="3"></button>
+      </div>
+      <div class="carousel-inner">
 
-        É nas pequenas ações que encontramos a grandeza da humanidade. Cada pacote de alimentos doado é um lembrete de que, juntos, somos capazes de fazer a diferença. Que a bondade que compartilhamos reverbera através do tempo, alimentando sonhos, renovando esperanças e construindo um futuro mais justo para todos.
-
-        Que cada doação seja uma promessa de um amanhã melhor, onde a fome seja apenas uma lembrança distante, e onde a solidariedade seja o alicerce de uma sociedade mais compassiva e igualitária.
-
-        Junte-se a nós nessa jornada de amor e doação. Porque quando damos, também recebemos - recebemos o sorriso de gratidão, a fé restaurada e a certeza de que, juntos, podemos tornar o mundo um lugar melhor para todos. Alimente o corpo, alimente a alma, alimente o mundo com a sua generosidade.
-      </p>
-<hr>
-
-        <!-- depoimentos -->
-        <p class="display-2 p2">Depoimentos</p>
-        <div class="container border border-black">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="depoimento">
-                <div class="usuario"><b>João Silva</b></div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis gravida urna non sem rutrum, eget ullamcorper neque gravida. Vestibulum rhoncus velit a velit ultricies, et varius orci suscipit."</p>
-              </div>
-              </div>
-            </div>
-        </div>
-          <br>
-          <div class="container border border-black">
-            <div class="row">
-            <div class="col-lg-12 ">
-              <div class="depoimento">
-                <div class="usuario"><b>Maria Oliveira</b></div>
-                <p>"Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam ac tristique lacus, et vehicula lacus. Sed sed ante eget magna aliquet vestibulum ut ac ex."</p>
-                </div>
-                      </div>
-                    </div>
-                </div>
-                <br>
-
-
-        <!-- FORMULÁRIO DE CADASTRO DE DEPOIMENTO -->
-        <div class="container rounded-3 mt-4 mb-4 bg-corEscura">
-            <h2 class="mb-4 fontPrincipal text-center pcolor">Cadastro de depoimento</h2>
-            <hr>
-            <form class="needs-validation" id="formCadDepoimento">
-              <!-- Nome -->
-              <div class="mb-3 fontSecundaria">
-              <label for="nomeCadDepoimento" class="form-label needs-validation">Nome</label>
-              <input type="text" class="form-control" id="nomeCadDepoimento" placeholder="Digite seu nome" required/>
-              </div>
-              <hr>
-
-              <div class="mb-3 fontSecundaria">
-              <label for="txtDepoimento" class="form-label" required>Depoimento</label>
-              <textarea class="form-control mt-2" id="txtDepoimento" placeholder="Digite com suas palavras seu depoimento" required></textarea>
-              </div>
-
-              <hr>
-
-              <!-- Contato -->
-              <div class="mb-3 fontSecundaria">
-                <label for="telefoneCadDepoimento" class="form-label">Telefone</label>
-                <input type="tel" class="form-control" id="telefoneCadDepoimento" placeholder="Digite seu telefone" />
-              </div>
-
-              <div class="mb-3 fontSecundaria">
-              <label for="emailCadDepoimento" class="form-label">Email</label>
-              <input type="email" class="form-control" id="emailCadDepoimento" placeholder="Digite seu email" required/>
-              </div>
-
-              <button type="submit" class="btn btn-bg-Secundario text-white btn-bg-corTerciaria btn-bg-corPrincipal fontPrincipal mb-1">Enviar</button>
-            </form>
-
+        <div class="carousel-item active">
+          <a href="1-facaSuaDoacao.html">
+            <img src="assets/imgslide/1.png" alt="" class="d-block w-100"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Faça sua doação!</h5>
+            <p>Cada contribuição é um gesto de amor que reverbera além do momento presente, deixando um legado de bondade para as gerações futuras.</p>
           </div>
         </div>
 
+        <div class="carousel-item">
+          <a href="2-comoFunciona.html">
+            <img src="assets/imgslide/2.png" alt="" class="d-block w-100"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Como funciona</h5>
+            <p>Em nossa plataforma, doadores têm a oportunidade única de fazer a diferença de maneira direta e significativa.</p>
+          </div>
+        </div>
 
+        <div class="carousel-item">
+          <a href="3-quemSomos.html">
+            <img src="assets/imgslide/3.png" alt="" class="d-block w-100"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Quem somos</h5>
+            <p>A finalidade da nossa plataforma vai muito além de simplesmente facilitar doações de alimentos.</p>
+          </div>
+        </div>
 
-      <!-- rodape -->
+        <div class="carousel-item">
+          <a href="5-contato.html">
+            <img src="assets/imgslide/4.png" alt="" class="d-block w-100"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Contato</h5>
+            <p>Estamos aqui para ouvir você e ajudar a tornar cada doação significativa.</p>
+          </div>
+        </div>
 
-      <script src="depoimento.js"></script>
-    <script src="script.js"></script>
+      </div>
+      <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
 
+  <!-- conteudo textual -->
+  <hr>
+  <div class="container my-3">
+    <p class="display-2 p1">Alimente o Bem</p>
+    <p class="lead">
+      Na jornada da vida, nossos passos são guiados pela compaixão, e nossas mãos são estendidas pela generosidade. Em um mundo onde a fome ainda assola tantas vidas, cada ato de doação é um raio de esperança que ilumina os corações famintos.
 
-  </body>
+      Nós acreditamos no poder transformador da solidariedade. Cada doação de alimentos não é apenas um gesto, mas sim um ato de amor que nutre não só o corpo, mas também a alma daqueles que mais precisam.
+
+      Junte-se a nós nessa jornada de amor e doação. Porque quando damos, também recebemos - recebemos o sorriso de gratidão, a fé restaurada e a certeza de que, juntos, podemos tornar o mundo um lugar melhor para todos. Alimente o corpo, alimente a alma, alimente o mundo com a sua generosidade.
+    </p>
+    <hr>
+  </div>
+</div>
+
+<!-- rodape -->
+
+<script src="depoimento.js"></script>
+<script src="script.js"></script>
+
+</body>
 </html>
