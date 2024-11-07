@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <title>Cadastro para Doação</title>
 
     <link
@@ -12,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
 
   </head>
-  <body class="bg-corClara">
+  <body class="bg-corClara pb-4">
     <header>
       <nav class="navbar navbar-expand-sm navbar-corEscura bg-corEscura fontPrincipal">
         <div class="container-fluid">
@@ -135,12 +136,11 @@
           <input type="email" class="form-control" id="emailCadFacaSuaDoacao" placeholder="Email" />
         </div>
 
-        <button type="submit" class="btn btn-bg-Secundario text-white btn-bg-corTerciaria btn-bg-corPrincipal fontPrincipal mb-1">Enviar</button>
+        <button type="submit" class="btn btn-bg-Secundario text-white btn-bg-corTerciaria btn-bg-corPrincipal fontPrincipal">Enviar</button>
+        <button type="button" id="exportarDados" class="btn btn-bg-corPrincipal btn-bg-corTerciaria text-light">Exportar dados</button>
       </form>
-
     </div>
   </div>
-
 
 
     <!-- rodape -->

@@ -147,3 +147,22 @@ form.addEventListener('submit', function(event) {
   // Exibe mensagem de sucesso
   alert('Os dados de cadastro para doação foram salvos com sucesso!');
 });
+
+
+function exportarParaExcel() {
+  const cadDoacao = JSON.parse(localStorage.getItem('cadDoacoes') || '[]');
+
+  if (cadDoacao.length === 0) {
+    alert("Não há dados para exportar.");
+    return;
+  }
+
+  const worksheet = XLSX.utils.json_to_sheet(cadDoacao);
+
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Doações");
+
+  XLSX.writeFile(workbook, "doacoes_realizadas.xlsx");
+}
+
+document.getElementById('exportarDados').addEventListener('click', exportarParaExcel);

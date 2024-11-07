@@ -90,4 +90,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+function exportarParaExcel() {
+  const cadReceptor = JSON.parse(localStorage.getItem('cadReceptor') || '[]');
 
+  if (cadReceptor.length === 0) {
+    alert("Não há dados para exportar.");
+    return;
+  }
+
+  const worksheet = XLSX.utils.json_to_sheet(cadReceptor);
+
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Receptores");
+
+  XLSX.writeFile(workbook, "receptores_cadastrados.xlsx");
+}
+
+document.getElementById('exportarDados').addEventListener('click', exportarParaExcel);
