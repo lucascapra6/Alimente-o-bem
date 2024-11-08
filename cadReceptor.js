@@ -1,6 +1,13 @@
 // Captura o formulário
 const formReceptor = document.getElementById('formCadReceptor');
-
+const estruturaFamiliar = [
+  { id: 1, name: "Família de 2 adultos e 1 criança", idTipoAlimentacaoAReceber: 1},
+  { id: 2, name: "Família de 2 adultos e 2 crianças", idTipoAlimentacaoAReceber: 1},
+  { id: 3, name: "Família de 2 adultos e 3 crianças ou mais", idTipoAlimentacaoAReceber: 1},
+  { id: 4, name: "Família de 1 adulto e 1 criança", idTipoAlimentacaoAReceber: 2},
+  { id: 5, name: "Família de 1 adulto e 2 crianças", idTipoAlimentacaoAReceber: 2},
+  { id: 6, name: "Família de 1 adulto e 3 crianças ou mais", idTipoAlimentacaoAReceber: 2}
+]
 // Adiciona um evento de envio ao formulário
 formReceptor.addEventListener('submit', function(event) {
   // Evita o comportamento padrão de envio do formulário
@@ -9,16 +16,19 @@ formReceptor.addEventListener('submit', function(event) {
   // Captura os valores dos inputs
   const nome = document.getElementById('nomeCadReceptor').value;
   const id = document.getElementById('idCadReceptor').value;
+  const estruturaFamiliar = document.getElementById('estruturaFamiliar');
   const descricao = document.getElementById('descricaoCadReceptor').value;
   const email = document.getElementById('emailCadReceptor').value;
   const telefone = document.getElementById('telefoneCadReceptor').value;
   const endereco = document.getElementById('enderecoCadReceptor').value;
 
+
   // Cria um objeto com os valores capturados
   const data = {
     nome: nome,
     id: id,
-      descricao: descricao,
+    estruturaFamiliar: estruturaFamiliar.value,
+    descricao: descricao,
     email: email,
     telefone: telefone,
     endereco: endereco
@@ -45,6 +55,7 @@ formReceptor.addEventListener('submit', function(event) {
   // Limpa os valores dos inputs após o envio
   document.getElementById('nomeCadReceptor').value = '';
   document.getElementById('idCadReceptor').value = '';
+  document.getElementById('estruturaFamiliar').value = '';
   document.getElementById('descricaoCadReceptor').value = '';
   document.getElementById('emailCadReceptor').value = '';
   document.getElementById('telefoneCadReceptor').value = '';
@@ -64,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
   if (dadosLocalStorageReceptores) {
     // Converte os dados do localStorage para um array de receptores
     const cadReceptor = JSON.parse(dadosLocalStorageReceptores);
-
+    const selectOpcao1 = document.getElementById('estruturaFamiliar');
     // Seleciona o elemento select para os receptores
     const selectOpcaoReceptor = document.getElementById('paraQuemDoar');
 
@@ -107,3 +118,15 @@ function exportarParaExcel() {
 }
 
 document.getElementById('exportarDados').addEventListener('click', exportarParaExcel);
+
+
+function populateSelect() {
+  const select = document.getElementById("estruturaFamiliar");
+  estruturaFamiliar.forEach(family => {
+    const option = document.createElement("option");
+    option.value = family.idTipoAlimentacaoAReceber;
+    option.textContent = family.name;
+    select.appendChild(option);
+  });
+}
+window.onload = populateSelect;

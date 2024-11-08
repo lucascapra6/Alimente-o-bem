@@ -60,13 +60,13 @@
         <!-- Nome -->
         <div class="mb-3 fontSecundaria">
           <label for="cadNomeFacaSuaDoacao" class="form-label">Nome</label>
-          <input type="text" class="form-control" id="cadNomeFacaSuaDoacao" placeholder="Digite seu nome" />
+          <input type="text" class="form-control" id="cadNomeFacaSuaDoacao" placeholder="Digite o nome do doador" />
 
           <br>
 
           <div class="mb-3">
             <label for="idCadFacasuaDoacao" class="form-label">Identificação (CPF/CNPJ)</label>
-            <input type="text" class="form-control" id="idCadFacasuaDoacao" name="identifica" placeholder="Digite seu CPF ou CNPJ, caso for empresa" required>
+            <input type="text" class="form-control" id="idCadFacasuaDoacao" name="identifica" placeholder="Digite o CPF ou CNPJ do doador, caso seja uma instituição" required>
           </div>
 
           <!-- Checkbox Anônimo, empresa ou PF -->
@@ -76,7 +76,7 @@
               <label class="form-label">Selecione a origem da doação:</label>
               <div class="form-check mt-2">
                   <input class="form-check-input" type="radio" id="anonimo" name="tipo" />
-                  <label class="form-check-label" for="anonimo">Desejo ser anônimo</label>
+                  <label class="form-check-label" for="anonimo">Doador anônimo</label>
               </div>
               <div class="form-check mt-2">
                   <input class="form-check-input" type="radio" id="empresa" name="tipo" />
@@ -94,24 +94,23 @@
         <hr>
 
         <!-- O que doar -->
-        <div class="mb-3 fontSecundaria">
-          <label for="oqueDoar" class="form-label" aria-describedby="infListDAAlimento">O que doar</label>
-          <select class="form-select" id="oqueDoar">
 
-
-          </select>
-          <small id="infListDAAlimento" class="form-text text-muted">Cadastre o alimento no formulário "Cadastro de alimentos" que deseja doar, assim, ele aparecerá na lista de alimentos disponíveis para doação.</small>
-        </div>
         <!-- Linha horizontal -->
         <hr>
 
         <!-- Para quem doar -->
         <div class="mb-3 fontSecundaria">
           <label for="paraQuemDoar" class="form-label">Para quem doar</label>
-          <select class="form-select" id="paraQuemDoar">
+          <select class="form-select" id="paraQuemDoar" onchange="onSelectParaQuemDoar()">
 
 
           </select>
+          <hr>
+          <div class="mb-3 fontSecundaria">
+            <label for="alimentoParaDoar" class="form-label" aria-describedby="infListDAAlimento">Alimentação a doar</label>
+            <select class="form-select" id="alimentoParaDoar"></select>
+          </div>
+
         </div>
 
         <!-- Linha horizontal -->
@@ -125,16 +124,6 @@
         </div>
         <!-- Linha horizontal -->
         <hr>
-
-        <!-- Contato -->
-        <div class="mb-3 fontSecundaria">
-          <label for="telefoneCadFacaSuaDoacao" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="telefoneCadFacaSuaDoacao" placeholder="Telefone" />
-        </div>
-        <div class="mb-3 fontSecundaria">
-          <label for="emailCadFacaSuaDoacao" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emailCadFacaSuaDoacao" placeholder="Email" />
-        </div>
 
         <button type="submit" class="btn btn-bg-Secundario text-white btn-bg-corTerciaria btn-bg-corPrincipal fontPrincipal">Enviar</button>
         <button type="button" id="exportarDados" class="btn btn-bg-corPrincipal btn-bg-corTerciaria text-light">Exportar dados</button>
